@@ -32,6 +32,8 @@
 
 .card-product-grid {
   margin-bottom: 20px;
+  cursor: pointer;
+  
   .img-wrap {
     border-radius: 0.2rem 0.2rem 0 0;
     height: 220px;
@@ -57,6 +59,10 @@
   a.title {
     color: #212529;
     display: block;
+  }
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
 
