@@ -1,0 +1,37 @@
+.header-main {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.widgets-wrap {
+  float: right !important;
+}
+
+.widget-header {
+  display: inline-flex;
+  vertical-align: middle;
+  position: relative;
+}
+
+.icontext {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.widget-header a {
+  color: #343a40;
+  text-decoration: none;
+  &:hover {
+    color: #3167eb;
+  }
+}
+
+
+.icon-sm {
+  width: 48px;
+  height: 48px;
+  line-height: 48px !important;
+  font-size: 20px;
+  text-align: center;
+}
