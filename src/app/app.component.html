@@ -13,35 +13,27 @@
         <li ngbDropdown class="d-inline-block">
           <div class="nav-link pl-0" id="dropdownBasic1" ngbDropdownToggle> <fa-icon [icon]="faBars"></fa-icon>  All category</div>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Products</button>
-            <button ngbDropdownItem>Services</button>
+            <button ngbDropdownItem (click)="showProducts()">Products</button>
+            <button ngbDropdownItem (click)="showServices()">Services</button>
           </div>
         </li>
 
+        <ng-container *ngIf="showingProducts">
+          <li class="nav-item" *ngFor="let item of products">
+            <a class="nav-link" href="#">{{item}}</a>
+          </li>
+        </ng-container>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Accessories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Eyes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Face</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lips</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Make-Up</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nails</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Skin Care</a>
-        </li>
+        <ng-container *ngIf="showingServices">
+          <li class="nav-item" *ngFor="let item of services">
+            <a class="nav-link"  routerLink="/services">{{item}}</a>
+          </li>
+        </ng-container>
+
       </ul>
     </div> <!-- collapse .// -->
   </div> <!-- container .// -->
 </nav>
+
+
 <router-outlet></router-outlet>
