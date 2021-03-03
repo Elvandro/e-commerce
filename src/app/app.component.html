@@ -13,14 +13,14 @@
         <li ngbDropdown class="d-inline-block">
           <div class="nav-link pl-0" id="dropdownBasic1" ngbDropdownToggle> <fa-icon [icon]="faBars"></fa-icon>  All category</div>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem (click)="showProducts()">Products</button>
-            <button ngbDropdownItem (click)="showServices()">Services</button>
+            <button ngbDropdownItem (click)="showProducts()" routerLink="/home">Products</button>
+            <button ngbDropdownItem (click)="showServices()" routerLink="/services">Services</button>
           </div>
         </li>
 
         <ng-container *ngIf="showingProducts">
           <li class="nav-item" *ngFor="let item of products">
-            <a class="nav-link" href="#">{{item}}</a>
+            <a class="nav-link" routerLink="/home">{{item}}</a>
           </li>
         </ng-container>
 

@@ -11,6 +11,12 @@
 .section-heading {
   margin-bottom: 20px;
   margin-top: 15px;
+
+  h4 {
+    color: #ee3780;
+    margin: 20px 0;
+    font-weight: bolder;
+  }
 }
 .intro-banner-wrap {
   height: 400px;
@@ -36,7 +42,7 @@
 
   .img-wrap {
     border-radius: 0.2rem 0.2rem 0 0;
-    height: 220px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,4 +108,13 @@ a {
 
 fa-icon {
   font-size: 2em;
+}
+
+.info-wrap {
+  width: 100%;
+  margin: -35px auto 0;
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+  text-align: center;
 }
